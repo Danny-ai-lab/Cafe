@@ -27,7 +27,7 @@
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <li><button class="flush">Order Online</button></li>
+            <li><button onclick="order()" class="flush">Order Online</button></li>
         </ul>
     </nav>
 
@@ -36,7 +36,7 @@
             <p class="luffy">Welcome to our Cafe</p>
             <h1>Good Coffee; <br> Great Moments</h1>
             <p>Savor handcrafted coffee, fresh pastries, and cozy vibes <br> Your perfect daily escape</p>
-            <button class="flash">View Our Menu →</button>
+            <button onclick="menu()" class="flash">View Our Menu →</button>
         </div>
     </section>
 
@@ -51,7 +51,7 @@
                 <div class="card-content">
                     <h4>Quality  Coffee</h4>
                     <p>We source the finest beans and <br>brew every cup to perfection</p>
-                    <button class="flash">Learn More →</button>
+                    <button onclick="learn()" class="flash">Learn More →</button>
                 </div>
             </div>
             <div class="card">
@@ -59,7 +59,7 @@
                 <div class="card-content">
                     <h4>Fresh and Delicious</h4>
                     <p>From pastreis to meals; everything <br>is made fresh daily</p>
-                    <button class="flash">Learn More →</button>
+                    <button onclick="learn()" class="flash">Learn More →</button>
                 </div>
             </div>
             <div class="card">
@@ -67,7 +67,7 @@
                 <div class="card-content">
                     <h4>Cozy Atmosphere</h4>
                     <p>A warm and welcoming space <br>to relax, work or catch up</p>
-                    <button class="flash">Learn More →</button>
+                    <button onclick="learn()" class="flash">Learn More →</button>
                 </div>
             </div>
         </div>    
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </div> 
-        <button class="fush">View All →</button> 
+        <button onclick="view()" class="fush">View All →</button> 
     </section>
     <section class="visit-section">
         <div class="visit-copy">
@@ -119,7 +119,7 @@
                 Come for the coffee, stay for the<br>
                 good vibes!
             </p>
-            <button class="visit-btn">FIND OUR LOCATION</button>
+            <button onclick="locate()" class="visit-btn">FIND OUR LOCATION</button>
         </div>
 
         <div class="visit-gallery">
@@ -141,7 +141,7 @@
 
             <div class="newsletter">
                 <input type="email" placeholder="Your email address" aria-label="Your email address">
-                <button type="button">SUBSCRIBE</button>
+                <button onclick="subscribe()" type="button"><a href="mailto:daniella.obozunya07@gmail.com">SUBSCRIBE</a></button>
             </div>
 
             <div class="socials">
@@ -163,5 +163,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
