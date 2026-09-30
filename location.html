@@ -3,11 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Location</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location.css">
 </head>
 <body>
-    <h1>Our Locations</h1>
+    <header class="head">
+        <h4>Good Coffee; Good Mood</h4>
+        <p><a href="#"><img src="images/whatsapp.png" alt=""></a>Mon-Sun: 7:00AM - 9:00PM</p>
+        <a href="#"><img src="images/instagram.png" alt=""></a>
+        <a href="#"><img src="images/x.png" alt=""></a>
+        <a href="#"><img src="images/facebook.png" alt=""></a>
+        <a href="#"><img src="images/telegram.png" alt=""></a>
+    </header>
 
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="">Nella's Cafe <br>Coffee and More</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="location.html">Contact</a></li>
+            <li><button onclick="order()" class="flush">Order Online</button></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div>
+            <p class="zoro">Find Us</p>
+            <h1>Our Location</h1>
+            <p>View us at our cozy cafe, where good coffee <br> is served in a warm and welcoming space</p>
+            <div class="divide"></div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="location-info">
+            <div class="locate-copy">
+                <h2>Our Location</h2>
+                <address>
+                    15 Aminu Kano Crescent<br>
+                    Wuse 2, Abuja<br>
+                    Nigeria
+                </address>
+            </div>
+
+            <div class="locate-contact">
+                <h2>Get in Touch</h2>
+                <p>+234 816 510 5879</p>
+                <a href="mailto:daniella.obozunya07@gmail.com">daniella.obozunya07@gmail.com</a>
+            </div>
+
+            <div class="locate-time">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday <span>7:00 AM - 9:00 PM</span></p>
+                <p>Saturday <span>7:00 AM - 10:00 PM</span></p>
+                <p>Sunday <span>7:00 AM - 9:00 PM</span></p>
+                <button class="flush">View Directions</button>
+            </div>
+        </div>
+
+        <div class="location-visual">
+            <iframe
+                src="https://www.google.com/maps?q=15+Aminu+Kano+Crescent,+Wuse+2,+Abuja,+Nigeria&output=embed"
+                title="Nella's Cafe location in Abuja"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="locate-parking">
+                <h2>Parking and Accessibility</h2>
+                <p>Street parking is available nearby and there is a public parking garage just 2 minutes away. Our cafe is wheelchair accessible and pet friendly.</p>
+                <p class="see-you-soon">See you soon! <span>&hearts;</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="message">
+        <div class="message-form-area">
+            <div class="message-copy">
+                <h2>Send Us a Message</h2>
+                <p>Have a question, suggestion, or just want to say hi?<br>We'd love to hear from you!</p>
+            </div>
+            <form action="mailto:daniella.obozunya07@gmail.com" method="post">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name *" required>
+                    <input type="email" name="email" placeholder="Your Email *" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message *" required></textarea>
+                <button type="submit">Send Message <span>&#8594;</span></button>
+            </form>
+        </div>
+        <img src="images/end 1.png" alt="Cafe storefront" class="message-image">
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="bean-mark">☕</div>
+                <div class="brand-copy">
+                    <h3>Stay in the Loop</h3>
+                    <p>Subscribe to get updates on new menu items, special offers, and events.</p>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Your email address">
+                <button onclick="subscribe()" type="button"><a href="mailto:daniella.obozunya07@gmail.com">SUBSCRIBE</a></button>
+            </div>
+
+            <div class="socials">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/instagram.png" alt=""></a>
+                    <a href="#"><img src="images/x.png" alt=""></a>
+                    <a href="#"><img src="images/facebook.png" alt=""></a>
+                    <a href="#"><img src="images/telegram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nella's Cafe. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </footer>       
     <script src="script.js"></script>
 </body>
 </html>

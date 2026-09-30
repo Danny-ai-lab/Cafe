@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header class="head">
         <h4>Good Coffee; Good Mood</h4>
-        <p><img src="images/whatsapp.png" alt="">Mon-Sun: 7:00AM - 9:00PM</p>
+        <p><a href="#"><img src="images/whatsapp.png" alt=""></a>Mon-Sun: 7:00AM - 9:00PM</p>
         <a href="#"><img src="images/instagram.png" alt=""></a>
         <a href="#"><img src="images/x.png" alt=""></a>
         <a href="#"><img src="images/facebook.png" alt=""></a>
@@ -21,15 +22,291 @@
             <a href="#"><img src="images/logo.png" alt="">Nella's Cafe <br>Coffee and More</a>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#">Gallery</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="location.html">Contact</a></li>
             <li><button onclick="order()" class="flush">Order Online</button></li>
         </ul>
     </nav>
+
+    <section class="main">
+        <div>
+            <p class="zoro">Our Menu</p>
+            <h1>Fresh Flavours,<br>Thoughtfully Crafted</h1>
+            <p>from Coffee to pastries <br> Every bite is made with love</p>
+            <div class="divide"></div>
+        </div>
+    </section>
+
+    <div class="butns">
+        <div class="btns">
+            <button class="btn_active">All</button>
+            <button class="btn">Coffee</button>
+            <button class="btn">Pastries &amp; Desserts</button>
+            <button class="btn">Sandwiches</button>
+            <button class="btn">Cold Drinks</button>
+        </div>
+
+        <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input type="text" placeholder="Search menu...">
+        </div>
+    </div>
+
+    <main class="menu-layout">
+        <section class="menu-content">
+            <div class="menu-group">
+                <div class="group-head">
+                    <div class="group-title">
+                        <span class="mini-mark">☕</span>
+                        <h3>Coffee</h3>
+                    </div>
+                    <p>Rich flavours. Perfectly brewed.</p>
+                </div>
+
+                <div class="second-cards">
+                    <article class="first-card">
+                        <img src="images/cappuccino.png" alt="Cappuccino">
+                        <div class="card-info">
+                            <h4>Cappuccino</h4>
+                            <p>₦5,000</p>
+                        </div>
+                    </article>
+
+                    <article class="first-card">
+                        <img src="images/iced_latte.png" alt="Iced Latte">
+                        <div class="card-info">
+                            <h4>Iced Latte</h4>
+                            <p>₦5,500</p>
+                        </div>
+                    </article>
+
+                    <article class="first-card">
+                        <img src="images/espresso.png" alt="Espresso">
+                        <div class="card-info">
+                            <h4>Espresso</h4>
+                            <p>₦3,500</p>
+                        </div>
+                    </article>
+
+                    <article class="first-card">
+                        <img src="images/americano.png" alt="Americano">
+                        <div class="card-info">
+                            <h4>Americano</h4>
+                            <p>₦4,000</p>
+                        </div>
+                    </article>
+
+                    <article class="first-card">
+                        <img src="images/mocha.png" alt="Mocha">
+                        <div class="card-info">
+                            <h4>Mocha</h4>
+                            <p>₦6,000</p>
+                        </div>
+                    </article>
+
+                    <article class="first-card">
+                        <img src="images/caramel latte.png" alt="Caramel latte">
+                        <div class="card-info">
+                            <h4>Caramel latte</h4>
+                            <p>₦6,000</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="menu-sections">
+                <div class="sects">
+                    <div class="menu-group">
+                        <div class="group-head">
+                            <div class="group-title">
+                                <span class="mini-mark">🥐</span>
+                                <h3>Pastries &amp; Desserts</h3>
+                            </div>
+                            <p>Sweet moments, always.</p>
+                        </div>
+
+                        <div class="third-cards">
+                            <article class="first-card">
+                                <img src="images/croissant.png" alt="Croissant">
+                                <div class="card-info">
+                                    <h4>Croissant</h4>
+                                    <p>₦3,500</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/pain au chocolate.png" alt="Pain au Chocolat">
+                                <div class="card-info">
+                                    <h4>Pain au Chocolat</h4>
+                                    <p>₦4,000</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/chocolate_cake.png" alt="Chocolate Cake">
+                                <div class="card-info">
+                                    <h4>Chocolate Cake</h4>
+                                    <p>₦5,500</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/cheesecake.png" alt="Chocolate Cake">
+                                <div class="card-info">
+                                    <h4>Cheesecake</h4>
+                                    <p>₦6,000</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/blueberry_muffin.png" alt="Blueberry Muffin">
+                                <div class="card-info">
+                                    <h4>Blueberry Muffin</h4>
+                                    <p>₦3,000</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="menu-group">
+                        <div class="group-head">
+                            <div class="group-title">
+                                <span class="mini-mark">🥪</span>
+                                <h3>Sandwiches</h3>
+                            </div>
+                            <p>Freah ingredients, great tastes.</p>
+                        </div>
+
+                        <div class="fourth-cards">
+                            <article class="first-card">
+                                <img src="images/chicken_sandwich.png" alt="Chicken Sandwich">
+                                <div class="card-info">
+                                    <h4>Chicken Sandwich</h4>
+                                    <p>₦7,500</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/chicken_sandwich.png" alt="Turkey and Avocado Sandwich">
+                                <div class="card-info">
+                                    <h4>Turkey and Avocado Sandwich</h4>
+                                    <p>₦8,500</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/chicken_sandwich.png" alt="Veggie sandwich">
+                                <div class="card-info">
+                                    <h4>Veggie sandwich</h4>
+                                    <p>₦6,000</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="menu-group">
+                        <div class="group-head">
+                            <div class="group-title">
+                                <span class="mini-mark">🍹</span>
+                                <h3>Cold Drinks</h3>
+                            </div>
+                            <p>Cool down with something refreshing.</p>
+                        </div>
+
+                        <div class="fifth-cards">
+                            <article class="first-card">
+                                <img src="images/iced_coffee.png" alt="Iced Coffee">
+                                <div class="card-info">
+                                    <h4>Iced Coffee</h4>
+                                    <p>₦5,000</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/iced_matcha_latte.png" alt="Iced Matcha Latte">
+                                <div class="card-info">
+                                    <h4>Iced Matcha Latte</h4>
+                                    <p>₦6,500</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/fresh_orange_juice.png" alt="Fresh Orange Juice">
+                                <div class="card-info">
+                                    <h4>Fresh Orange Juice</h4>
+                                    <p>₦4,500</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/berry_smoothie.png" alt="Berry Smoothie">
+                                <div class="card-info">
+                                    <h4>Berry Smoothie</h4>
+                                    <p>₦6,000</p>
+                                </div>
+                            </article>
+
+                            <article class="first-card">
+                                <img src="images/lemonade.png" alt="Lemonade">
+                                <div class="card-info">
+                                    <h4>Lemonade</h4>
+                                    <p>₦3,500</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tired">
+                        <p>Good Food</p>
+                        <p>Good Coffee</p>
+                        <p>Better days</p>
+                        <div>divider</div>
+                        <img src="images/tired.png" alt="">
+                        <p>More than just a cafe💓</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="bean-mark">☕</div>
+                <div class="brand-copy">
+                    <h3>Stay in the Loop</h3>
+                    <p>Subscribe to get updates on new menu items, special offers, and events.</p>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Your email address">
+                <button onclick="subscribe()" type="button"><a href="mailto:daniella.obozunya07@gmail.com">SUBSCRIBE</a></button>
+            </div>
+
+            <div class="socials">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/instagram.png" alt=""></a>
+                    <a href="#"><img src="images/x.png" alt=""></a>
+                    <a href="#"><img src="images/facebook.png" alt=""></a>
+                    <a href="#"><img src="images/telegram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nella's Cafe. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -1014,3 +1014,792 @@ body{
 }
 
 /* menu.html*/
+.second-cards {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.second-cards .first-card,
+.third-cards .first-card,
+.fourth-cards .first-card,
+.fifth-cards .first-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.second-cards .first-card:hover,
+.third-cards .first-card:hover,
+.fourth-cards .first-card:hover,
+.fifth-cards .first-card:hover {
+    transform: translateY(-8px);
+}
+
+.third-cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.fourth-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.fifth-cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+
+}
+
+.menu-sections{
+    width: 100%;
+}
+
+.sects {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(150px, 190px);
+    align-items: start;
+    gap: 28px;
+    width: 100%;
+}
+
+.sects > .menu-group {
+    grid-column: 1;
+}
+
+.tired {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    min-height: 100%;
+    padding: 22px 14px;
+    border: 1px solid rgba(111, 61, 39, 0.12);
+    border-radius: 8px;
+    background: #f4ecdf;
+    color: #2d1d14;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tired p {
+    margin: 0;
+}
+
+.tired > p:nth-of-type(-n + 3) {
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.tired > div {
+    width: 48px;
+    margin: 4px auto;
+    border-top: 1px solid rgba(91, 61, 46, 0.35);
+    font-size: 0;
+    flex: 0 0 auto;
+}
+
+.tired img {
+    display: block;
+    width: calc(100% + 28px);
+    height: auto;
+    min-height: 220px;
+    flex: 1 1 auto;
+    object-fit: cover;
+}
+
+.tired > p:last-child {
+    font-family: "Segoe Script", "Brush Script MT", cursive;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+@media (max-width: 760px) {
+    .sects {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .tired {
+        grid-column: 1;
+        grid-row: auto;
+        min-height: 420px;
+    }
+}
+
+/* about */
+
+.sakura {
+    width: min(1120px, calc(100% - 64px));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.anya {
+    margin: 0 0 12px;
+    color: #7d6146;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.frieren {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 11px 16px;
+    border-radius: 3px;
+    background: brown;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.frieren:hover {
+    transform: translateY(-2px);
+    background: black;
+}
+
+
+.frieren span {
+    font-size: 16px;
+    line-height: 0.7;
+}
+
+.mitsuri {
+    display: grid;
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+    align-items: center;
+    gap: 62px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.nezuko {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-rows: repeat(2, minmax(126px, 1fr));
+    gap: 12px;
+    min-height: 300px;
+}
+
+.nezuko img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.saitama {
+    grid-row: 1 / span 2;
+}
+
+.gojo h2,
+.shikamaru h2,
+.rengoku h2 {
+    margin: 0;
+    color: #332319;
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 500;
+    line-height: 1.08;
+}
+
+.yor {
+    margin: 20px 0 0;
+    color: #6c7953;
+    font-family: 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 17px;
+    font-style: italic;
+    transform: rotate(-3deg);
+}
+
+.eren {
+    padding: 34px 0 40px;
+    background: #e9e4d9;
+}
+
+.shikamaru {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.shikamaru .anya {
+    margin-bottom: 7px;
+}
+
+.shikamaru h2 {
+    font-size: 32px;
+}
+
+.deku {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.bakugo {
+    padding: 4px 22px 0;
+    text-align: center;
+}
+
+.todoroki {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 10px;
+    place-items: center;
+    border-radius: 50%;
+    background: #ded6c7;
+    color: #65734f;
+    font-size: 21px;
+}
+
+.bakugo h3 {
+    margin: 0;
+    color: #403124;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.bakugo p {
+    margin: 7px 0 0;
+    color: #6f6255;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.tanjiro {
+    padding: 52px 0;
+    background: #f4f0e8;
+}
+
+.zenitsu {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: center;
+    gap: 58px;
+}
+
+.inosuke {
+    position: relative;
+    min-height: 310px;
+}
+
+.inosuke img {
+    display: block;
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.inosuke span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 70%;
+    padding: 12px 17px;
+    background: rgba(52, 37, 28, 0.86);
+    color: #fffaf4;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.rengoku .frieren {
+    margin-top: 18px;
+}
+
+/* Blog */
+.vegeta {
+    width: min(1120px, calc(100% - 64px));
+    margin: 0 auto;
+    padding: 38px 0 54px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: normal;
+}
+
+.bulma {
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+.piccolo {
+    display: grid;
+    grid-template-columns: minmax(24px, 1fr) auto minmax(24px, 1fr);
+    align-items: center;
+    gap: 18px;
+}
+
+.piccolo span {
+    border-top: 1px solid rgba(112, 69, 46, 0.23);
+}
+
+.piccolo h1 {
+    margin: 0;
+    color: #2f2118;
+    font-size: clamp(25px, 3vw, 38px);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.krillin {
+    margin: 10px 0 0;
+    color: #765b47;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.krillin b {
+    padding: 0 7px;
+    color: #b08c6f;
+    font-weight: 400;
+}
+
+.trunks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.gohan {
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid rgba(91, 61, 43, 0.11);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.gohan > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.7 / 1;
+    object-fit: cover;
+}
+
+.beerus {
+    margin: 9px 0 3px;
+    color: #775239;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.gohan h2,
+.makima h2 {
+    margin: 0;
+    color: #302219;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.08;
+}
+
+.android18 {
+    margin: 7px 0 8px;
+    color: #6b5d50;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.gohan time {
+    display: block;
+    color: #826e5c;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+}
+
+.chichi {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 13px;
+    border-radius: 999px;
+    background: brown;
+    color: #fffaf4;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.chichi:hover {
+    transform: translateY(-1px);
+    background: black;
+}
+
+.power {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 26px;
+    align-items: center;
+    margin-top: 18px;
+    padding: 12px;
+    background: #e9ddce;
+}
+
+.power img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.makima {
+    padding: 4px 14px 4px 0;
+}
+
+.makima .beerus {
+    margin-top: 0;
+}
+
+.makima h2 {
+    font-size: 27px;
+}
+
+.makima > p:not(.beerus) {
+    margin: 8px 0 0;
+    color: #625144;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+    body.goku .head {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    body.goku .head p {
+        margin: 0;
+    }
+
+    body.goku .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    body.goku .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .vegeta {
+        width: min(100% - 36px, 620px);
+        padding-top: 30px;
+    }
+
+    .trunks {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .power {
+        gap: 17px;
+    }
+}
+
+@media (max-width: 520px) {
+    .vegeta {
+        width: calc(100% - 28px);
+    }
+
+    .piccolo {
+        gap: 10px;
+    }
+
+    .piccolo h1 {
+        font-size: 25px;
+    }
+
+    .krillin {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .krillin b {
+        padding: 0 3px;
+    }
+
+    .trunks,
+    .power {
+        grid-template-columns: 1fr;
+    }
+
+    .gohan h2 {
+        font-size: 21px;
+    }
+
+    .android18 {
+        font-size: 13px;
+    }
+
+    .power > img {
+        height: 210px;
+    }
+
+    .makima {
+        padding: 0 4px 5px;
+    }
+}
+
+/* location.html*/
+.location {
+    display: grid;
+    grid-template-columns: minmax(0, 35fr) minmax(0, 65fr);
+    gap: 46px;
+    padding: 52px 70px 76px;
+}
+
+.location-info,
+.location-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.location-info {
+    padding: 8px 26px 8px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.location h2 {
+    margin-bottom: 18px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 29px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.location p,
+.location address {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.location address {
+    font-style: normal;
+}
+
+.location a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.location a:hover {
+    color: red;
+}
+
+.location-visual iframe {
+    width: 100%;
+    height: 335px;
+    border: 0;
+    border-radius: 9px;
+    display: block;
+    box-shadow: 0 8px 20px rgba(63, 37, 26, 0.08);
+}
+
+.locate-parking {
+    position: relative;
+    min-height: 190px;
+    padding: 24px 28px 66px;
+    border: 1px solid rgba(91, 61, 46, 0.16);
+    border-radius: 9px;
+    background-color: #eee2d3;
+    margin: 0;
+    box-shadow: 0 5px 14px rgba(63, 37, 26, 0.05);
+}
+
+.locate-copy, .locate-contact, .locate-time {
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(91, 61, 46, 0.35);
+}
+
+.locate-time p {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin: 9px 0;
+}
+
+.locate-time p span {
+    white-space: nowrap;
+}
+
+.locate-parking h2 {
+    font-size: 23px;
+}
+
+.see-you-soon {
+    position: absolute;
+    right: 24px;
+    bottom: 14px;
+    margin: 0;
+    color: #7b4528 !important;
+    font-family: "Segoe Script", "Brush Script MT", cursive;
+    font-size: 20px !important;
+    font-style: italic;
+    transform: rotate(-5deg);
+}
+
+.see-you-soon span {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+}
+
+.location-info > div:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media (max-width: 760px) {
+    .location {
+        grid-template-columns: 1fr;
+        padding: 35px 24px 50px;
+        gap: 40px;
+    }
+
+    .location-info {
+        padding-right: 0;
+    }
+}
+
+.message {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 36px;
+    max-width: 1120px;
+    margin: 30px auto 70px;
+    padding: 24px;
+    background: #eee2d3;
+    border-radius: 9px;
+    box-shadow: 0 8px 20px rgba(63, 37, 26, 0.06);
+}
+
+.message-form-area {
+    padding: 8px 0 8px;
+}
+
+.message-copy h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+.message-copy p {
+    margin-bottom: 18px;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.message form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.message input,
+.message textarea {
+    width: 100%;
+    border: 1px solid rgba(91, 61, 46, 0.18);
+    border-radius: 7px;
+    padding: 13px;
+    background: rgba(255, 255, 255, 0.16);
+    color: black;
+    font: 15px Georgia, 'Times New Roman', serif;
+    outline: none;
+}
+
+.message textarea {
+    min-height: 112px;
+    resize: vertical;
+}
+
+
+
+.message button {
+    align-self: flex-start;
+    border: none;
+    border-radius: 999px;
+    padding: 13px 24px;
+    background: brown;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.message button span {
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+.message button:hover {
+    background: black;
+}
+
+.message-image {
+    width: 100%;
+    height: 342px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+@media (max-width: 760px) {
+    .message {
+        grid-template-columns: 1fr;
+        margin: 20px 24px 50px;
+        padding: 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .message-image {
+        height: 280px;
+    }
+}
+
